@@ -186,6 +186,17 @@
     h2 { font-size: var(--text-2xl); margin-bottom: var(--space-4); }
     h3 { font-size: var(--text-xl); }
 
+      .hero-subheadline {
+      margin-top: var(--space-4);
+      margin-bottom: var(--space-4);
+      max-width: 22ch;
+      font-family: var(--font-body);
+      font-size: clamp(1.05rem, 0.95rem + 0.7vw, 1.35rem);
+      line-height: 1.35;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+
     p { margin: 0 0 1rem; max-width: 68ch; }
     .hero-copy p, .section-intro, .muted { color: var(--color-text-muted); }
     .hero-copy { position: relative; z-index: 1; }
@@ -460,6 +471,21 @@
       border-top: 1px solid var(--color-divider);
       color: var(--color-text-muted);
       font-size: var(--text-sm);
+    }
+
+    .footer-contact-block {
+      display: grid;
+      gap: 0.35rem;
+    }
+
+    .footer-contact-block p {
+      margin: 0;
+      max-width: none;
+    }
+
+    .footer-contact-block a {
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
     }
 
     .fineprint { color: var(--color-text-faint); font-size: var(--text-xs); }
