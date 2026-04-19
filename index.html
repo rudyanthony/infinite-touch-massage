@@ -367,7 +367,60 @@
       color: var(--color-text);
       border-color: rgba(202,165,61,0.18);
     }
+    .testimonial-stack {
+      margin-top: var(--space-8);
+      padding-top: var(--space-6);
+      border-top: 1px solid var(--color-divider);
+      display: grid;
+      gap: var(--space-4);
+    }
 
+    .testimonial-stack-head {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .testimonial-stack-head h4 {
+      margin: 0;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      line-height: 1.4;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+
+    .testimonial-item {
+      padding: 1rem 1rem 1.1rem;
+      border-radius: 1.1rem;
+      background: color-mix(in srgb, var(--color-surface-2) 72%, transparent);
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .testimonial-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 0.75rem;
+      align-items: baseline;
+      margin-bottom: 0.55rem;
+    }
+
+    .testimonial-meta strong {
+      font-size: 0.98rem;
+      color: var(--color-text);
+    }
+
+    .testimonial-meta span {
+      font-size: var(--text-sm);
+      color: var(--color-text-faint);
+    }
+
+    .testimonial-item p {
+      margin: 0;
+      max-width: none;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
     .list {
       margin: 0;
       padding: 0;
@@ -604,10 +657,41 @@
           </div>
         </div>
 
-        <div class="quote-panel">
+              <div class="quote-panel">
           <span class="label-pill">Practice philosophy</span>
           <h3 style="margin-top:1rem;">Healing should feel simple, not performative.</h3>
           <p>That means a calm presence, attentive bodywork, and sessions that respond to real tension, real stress, and real life. The goal is not just a massage that feels good in the moment, but care that helps you feel more at home in your body afterward.</p>
+
+          <div class="testimonial-stack">
+            <div class="testimonial-stack-head">
+              <span class="label-pill">Testimonials</span>
+              <h4>Client feedback from previous platform sessions.</h4>
+            </div>
+
+            <article class="testimonial-item">
+              <div class="testimonial-meta">
+                <strong>Ahmet</strong>
+                <span>March 8, 2020</span>
+              </div>
+              <p>“Expert level, really detailed on upper body!”</p>
+            </article>
+
+            <article class="testimonial-item">
+              <div class="testimonial-meta">
+                <strong>Brian</strong>
+                <span>March 18, 2019</span>
+              </div>
+              <p>“Very professional, excellent massage, definitely one of the best I’ve ever had.”</p>
+            </article>
+
+            <article class="testimonial-item">
+              <div class="testimonial-meta">
+                <strong>Will</strong>
+                <span>September 23, 2015</span>
+              </div>
+              <p>“Rudy was great! Best massage I’ve ever had, hands down!! Very professional and very good at what he does.”</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
