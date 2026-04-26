@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infinite Touch Massage | Mobile Massage in Miami</title>
+  <meta name="description" content="Infinite Touch Massage offers licensed mobile massage in Miami with straightforward pricing, memberships, chair massage, focused assessment sessions, and direct booking by call, text, or email." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.2rem);
+      --text-2xl: clamp(2.1rem, 1.3rem + 2.6vw, 4rem);
+      --text-3xl: clamp(3rem, 1rem + 4.8vw, 6rem);
+      --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem;
+      --color-bg: #f5f1e8;
+      --color-surface: #fcfaf5;
+      --color-surface-2: #efe6d5;
+      --color-border: rgba(19,19,19,0.12);
+      --color-divider: rgba(19,19,19,0.08);
+      --color-text: #121212;
+      --color-text-muted: #60584e;
+      --color-primary: #caa53d;
+      --color-primary-deep: #9f7b1f;
+      --color-primary-soft: rgba(202,165,61,0.14);
+      --shadow-sm: 0 8px 24px rgba(24,18,8,0.06);
+      --shadow-md: 0 18px 60px rgba(24,18,8,0.1);
+      --shadow-lg: 0 30px 100px rgba(24,18,8,0.14);
+      --radius-md: 0.9rem; --radius-lg: 1.4rem; --radius-xl: 2rem; --radius-full: 999px;
+      --content-default: 1140px;
+      --content-wide: 1280px;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Manrope', Arial, sans-serif;
+    }
+    [data-theme="dark"] {
+      --color-bg: #111111;
+      --color-surface: #171717;
+      --color-surface-2: #1e1e1d;
+      --color-border: rgba(255,255,255,0.12);
+      --color-divider: rgba(255,255,255,0.08);
+      --color-text: #f5f1e8;
+      --color-text-muted: #d0c4b1;
+      --color-primary: #d7b252;
+      --color-primary-deep: #e5c878;
+      --color-primary-soft: rgba(215,178,82,0.14);
+      --shadow-sm: 0 8px 24px rgba(0,0,0,0.22);
+      --shadow-md: 0 18px 60px rgba(0,0,0,0.28);
+      --shadow-lg: 0 30px 100px rgba(0,0,0,0.35);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: var(--font-body); font-size: var(--text-base); line-height: 1.6; color: var(--color-text); background: radial-gradient(circle at top right, var(--color-primary-soft), transparent 28%), linear-gradient(180deg, var(--color-bg) 0%, var(--color-surface) 100%); }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button { font: inherit; }
+    .container { width: min(calc(100% - 2rem), var(--content-default)); margin: 0 auto; }
+    .container-wide { width: min(calc(100% - 2rem), var(--content-wide)); margin: 0 auto; }
+    .site-header { position: sticky; top: 0; z-index: 30; background: color-mix(in srgb, var(--color-bg) 84%, transparent); backdrop-filter: blur(16px); border-bottom: 1px solid var(--color-divider); }
+    .header-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); }
+    .brand { display: flex; align-items: center; gap: var(--space-3); }
+    .brand-mark { width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--color-border); overflow: hidden; background: var(--color-surface); box-shadow: var(--shadow-sm); }
+    .brand-mark img { width: 100%; height: 100%; object-fit: cover; }
+    .brand-title { font-family: var(--font-display); font-size: 1.7rem; line-height: 1; }
+    .brand-subtitle { font-size: var(--text-xs); letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-text-muted); }
+    .nav { display: none; gap: var(--space-4); font-size: var(--text-sm); }
+    .nav a { color: var(--color-text-muted); }
+    .theme-toggle { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); display: grid; place-items: center; }
+    section { padding: clamp(3.5rem, 7vw, 6rem) 0; }
+    .hero { padding: 2rem 0 3rem; }
+    .hero-shell { display: grid; gap: var(--space-10); align-items: center; }
+    .eyebrow { display: inline-flex; padding: 0.45rem 0.85rem; border-radius: var(--radius-full); border: 1px solid var(--color-border); background: color-mix(in srgb, var(--color-surface) 86%, transparent); color: var(--color-text-muted); font-size: var(--text-xs); letter-spacing: 0.1em; text-transform: uppercase; }
+    h1, h2, h3 { margin: 0; font-family: var(--font-display); line-height: 0.98; }
+    h1 { font-size: var(--text-3xl); max-width: 8ch; margin-top: var(--space-5); }
+    h2 { font-size: var(--text-2xl); margin-bottom: var(--space-4); }
+    h3 { font-size: var(--text-xl); }
+    p { margin: 0 0 1rem; max-width: 56ch; color: var(--color-text-muted); }
+    .hero-subheadline { margin-top: var(--space-4); margin-bottom: var(--space-4); max-width: 18ch; font-size: clamp(1.05rem, 0.95rem + 0.7vw, 1.35rem); line-height: 1.35; font-weight: 700; color: var(--color-text); }
+    .cta-row { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); }
+    .btn { min-height: 50px; display: inline-flex; align-items: center; justify-content: center; padding: 0.95rem 1.3rem; border-radius: var(--radius-full); font-size: var(--text-sm); font-weight: 700; border: 1px solid var(--color-border); }
+    .btn-primary { background: var(--color-text); color: var(--color-surface); border-color: transparent; }
+    .btn-secondary { background: var(--color-surface); color: var(--color-text); }
+    .hero-visual { position: relative; min-height: 760px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .hero-orbit { position: absolute; inset: 10% 6% 8% 10%; border-radius: 2rem; background: linear-gradient(180deg, color-mix(in srgb, var(--color-surface) 88%, transparent), color-mix(in srgb, var(--color-surface-2) 90%, transparent)); border: 1px solid var(--color-border); box-shadow: var(--shadow-lg); transform: rotate(-4deg); }
+    .hero-card { position: relative; z-index: 1; width: min(100%, 460px); padding: 2rem; border-radius: 2rem; border: 1px solid var(--color-border); background: color-mix(in srgb, var(--color-surface) 94%, transparent); box-shadow: var(--shadow-md); }
+    .hero-logo { position: relative; z-index: 1; margin-top: 1.5rem; width: min(100%, 340px); padding: 1.5rem; border-radius: 1.8rem; background: color-mix(in srgb, var(--color-surface) 94%, transparent); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); }
+    .hero-logo img { max-width: 220px; margin: 0 auto; }
+    .label-pill { display: inline-flex; padding: 0.4rem 0.78rem; border-radius: var(--radius-full); background: var(--color-primary-soft); border: 1px solid rgba(202,165,61,0.18); font-size: var(--text-xs); letter-spacing: 0.1em; text-transform: uppercase; }
+    .list { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--space-3); }
+    .list li { position: relative; padding-left: 1rem; color: var(--color-text-muted); }
+    .list li::before { content: ""; position: absolute; left: 0; top: 0.72rem; width: 7px; height: 7px; border-radius: 50%; background: var(--color-primary); }
+    .section-head { margin-bottom: var(--space-8); }
+    .grid-2, .grid-3 { display: grid; gap: var(--space-5); }
+    .card, .pricing-block, .panel, .faq details { background: color-mix(in srgb, var(--color-surface) 94%, transparent); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); border-radius: 1.5rem; }
+    .card, .panel { padding: 1.5rem; }
+    .pricing-block { padding: 1.6rem; }
+    .price { font-family: var(--font-display); font-size: var(--text-2xl); margin: 0.35rem 0 0.35rem; color: var(--color-text); }
+    .pricing-note { font-size: var(--text-sm); color: var(--color-text-muted); }
+    .mini { font-size: var(--text-sm); color: var(--color-text-muted); }
+    .accent-band { position: relative; }
+    .accent-band::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent, rgba(202,165,61,0.05), transparent); pointer-events: none; }
+    .service-chip-wrap { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 1rem; }
+    .service-chip { padding: 0.68rem 0.92rem; border-radius: var(--radius-full); background: color-mix(in srgb, var(--color-surface) 92%, transparent); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); font-size: var(--text-sm); }
+    .contact-shell { padding: clamp(1.5rem, 4vw, 2.3rem); border-radius: 2rem; background: linear-gradient(135deg, color-mix(in srgb, var(--color-text) 96%, transparent), #262116); color: var(--color-surface); box-shadow: var(--shadow-lg); }
+    .contact-shell p, .contact-shell h2, .contact-shell h3 { color: inherit; }
+    .contact-shell .btn-primary { background: var(--color-primary); color: #111; }
+    .contact-shell .btn-secondary { background: rgba(255,255,255,0.06); color: var(--color-surface); border-color: rgba(255,255,255,0.12); }
+    .service-area-grid { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 1rem; }
+    .service-area-grid span { display: inline-flex; padding: 0.7rem 0.9rem; border-radius: var(--radius-full); background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.08); font-size: var(--text-sm); }
+    .faq details { padding: 1.15rem 1.2rem; }
+    .faq details + details { margin-top: 0.8rem; }
+    .faq summary { cursor: pointer; font-weight: 700; }
+    footer { padding: 2rem 0 3rem; border-top: 1px solid var(--color-divider); color: var(--color-text-muted); font-size: var(--text-sm); }
+    .footer-contact-block { display: grid; gap: 0.35rem; }
+    .footer-contact-block p { margin: 0; }
+    @media (min-width: 900px) { .nav { display: flex; } .hero-shell, .grid-2, .contact-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); } .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    @media (max-width: 899px) { .hero-visual { min-height: auto; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container-wide header-inner">
+      <a class="brand" href="#home" aria-label="Infinite Touch Massage home">
+        <div class="brand-mark"><img src="./logo-v2.jpg" alt="Infinite Touch Massage logo" width="48" height="48" /></div>
+        <div><div class="brand-title">Infinite Touch</div><div class="brand-subtitle">Massage</div></div>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#plans">Plans</a>
+        <a href="#membership">Membership</a>
+        <a href="#chair">Chair Massage</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme">◐</button>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container-wide hero-shell">
+        <div class="hero-copy">
+          <span class="eyebrow">Licensed mobile massage in Miami</span>
+          <h1>Mobile Massage in Miami</h1>
+          <p class="hero-subheadline">Straightforward bodywork, focused care, and easy booking.</p>
+          <p>In-home massage for relaxation, recovery, and recurring tension.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="tel:7863700602">Call to Book</a>
+            <a class="btn btn-secondary" href="sms:7863700602">Text to Book</a>
+            <a class="btn btn-secondary" href="mailto:rudyanthony@pointinfinite.org">Email</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Brand presentation">
+          <div class="hero-orbit"></div>
+          <div class="hero-card">
+            <span class="label-pill">Quick overview</span>
+            <ul class="list" style="margin-top:1rem;">
+              <li>Licensed and insured.</li>
+              <li>Mobile service in Miami and nearby areas.</li>
+              <li>Massage, assessment sessions, memberships, and chair massage.</li>
+              <li>Book directly by call, text, or email.</li>
+            </ul>
+          </div>
+          <div class="hero-logo"><img src="./logo-v2.jpg" alt="Infinite Touch Massage logo" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="label-pill">Services</span>
+          <h2>Simple pricing.</h2>
+          <p>Choose standard massage or a more focused first session.</p>
+        </div>
+        <div class="grid-3">
+          <article class="pricing-block"><span class="label-pill">Massage</span><h3 style="margin-top:1rem;">60 minutes</h3><div class="price">$120</div><p class="pricing-note">General relaxation, recovery, and tension relief.</p></article>
+          <article class="pricing-block"><span class="label-pill">Massage</span><h3 style="margin-top:1rem;">90 minutes</h3><div class="price">$160</div><p class="pricing-note">More time for deeper work and multiple focus areas.</p></article>
+          <article class="pricing-block"><span class="label-pill">Massage</span><h3 style="margin-top:1rem;">120 minutes</h3><div class="price">$200</div><p class="pricing-note">Extended bodywork with slower pacing and fuller coverage.</p></article>
+        </div>
+        <div class="grid-2" style="margin-top:1.5rem;">
+          <div class="card"><span class="label-pill">Assessment Session</span><h3 style="margin-top:1rem;">90 minutes · $180</h3><p>A focused first session for recurring neck, back, posture, or desk-related tension.</p></div>
+          <div class="card"><span class="label-pill">Good for</span><div class="service-chip-wrap"><span class="service-chip">Stress relief</span><span class="service-chip">Recovery</span><span class="service-chip">Desk tension</span><span class="service-chip">Neck & shoulders</span><span class="service-chip">Low back & hips</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="plans" class="accent-band">
+      <div class="container">
+        <div class="section-head"><span class="label-pill">Plans</span><h2>For clients who want consistency.</h2><p>Prepaid plans and shorter follow-up options.</p></div>
+        <div class="grid-3">
+          <article class="card"><span class="label-pill">4-Session Plan</span><h3 style="margin-top:1rem;">60 minutes</h3><div class="price">$360</div><p class="mini">$90 per session</p></article>
+          <article class="card"><span class="label-pill">4-Session Plan</span><h3 style="margin-top:1rem;">90 minutes</h3><div class="price">$520</div><p class="mini">$130 per session</p></article>
+          <article class="card"><span class="label-pill">4-Session Plan</span><h3 style="margin-top:1rem;">120 minutes</h3><div class="price">$660</div><p class="mini">$165 per session</p></article>
+        </div>
+        <div class="grid-2" style="margin-top:1.5rem;">
+          <div class="card"><span class="label-pill">Chop Shop Follow-Up</span><h3 style="margin-top:1rem;">30–45 minutes · $65</h3><p>Focused follow-up work for returning clients.</p></div>
+          <div class="card"><span class="label-pill">Best for</span><ul class="list" style="margin-top:1rem;"><li>Neck and shoulders</li><li>Upper back and desk tension</li><li>Quick tune-ups between full sessions</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="membership">
+      <div class="container">
+        <div class="section-head"><span class="label-pill">Membership</span><h2>Monthly member pricing.</h2><p>Simple recurring care for clients who come in regularly.</p></div>
+        <div class="grid-3">
+          <article class="pricing-block"><span class="label-pill">Member rate</span><h3 style="margin-top:1rem;">60 minutes</h3><div class="price">$100</div></article>
+          <article class="pricing-block"><span class="label-pill">Member rate</span><h3 style="margin-top:1rem;">90 minutes</h3><div class="price">$140</div></article>
+          <article class="pricing-block"><span class="label-pill">Member rate</span><h3 style="margin-top:1rem;">120 minutes</h3><div class="price">$180</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="chair" class="accent-band">
+      <div class="container">
+        <div class="section-head">
+          <span class="label-pill">Chair Massage</span>
+          <h2>On-site chair massage for events and teams.</h2>
+          <p>Professional chair massage for offices, wellness events, private gatherings, and pop-ups.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <span class="label-pill">Best for</span>
+            <ul class="list" style="margin-top:1rem;">
+              <li>Office wellness days</li>
+              <li>Corporate events</li>
+              <li>Vendor markets</li>
+              <li>Private gatherings</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="label-pill">Starting rate</span>
+            <h3 style="margin-top:1rem;">$100/hour</h3>
+            <p>Short sessions focused on neck, shoulders, back, arms, and hands.</p>
+            <p class="mini">Custom quote based on location, event size, and booking length.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="accent-band">
+      <div class="container grid-2">
+        <div class="panel"><span class="label-pill">About</span><h2 style="margin-top:1rem;">Professional mobile care.</h2><p>Infinite Touch Massage is a licensed mobile practice serving Miami and nearby South Florida areas with personalized bodywork and direct booking.</p></div>
+        <div class="panel"><span class="label-pill">Why clients book</span><ul class="list" style="margin-top:1rem;"><li>In-home convenience.</li><li>Clear pricing.</li><li>Calm, respectful sessions.</li><li>Options for one-off or ongoing care.</li></ul></div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="container">
+        <div class="section-head"><span class="label-pill">FAQ</span><h2>Before you book.</h2></div>
+        <details open><summary>What is the difference between massage and an assessment session?</summary><p>Massage is standard bodywork. The assessment session is a more focused 90-minute visit for recurring tension, posture, and desk-related issues.</p></details>
+        <details><summary>What is Chop Shop Follow-Up?</summary><p>It is a shorter 30–45 minute follow-up for returning clients who want focused work between full sessions.</p></details>
+        <details><summary>Do you offer chair massage for events?</summary><p>Yes. Chair massage is available for offices, wellness events, private gatherings, and pop-ups. Pricing starts at $100 per hour.</p></details>
+        <details><summary>Do you travel to clients?</summary><p>Yes. Mobile massage is available in Miami and nearby service areas.</p></details>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-shell">
+          <div class="grid-2 contact-layout">
+            <div>
+              <span class="label-pill">Contact</span>
+              <h2 style="margin-top:1rem;">Book directly.</h2>
+              <p>Call, text, or email with your preferred session length, location, or event request.</p>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="tel:7863700602">Call 786.370.0602</a>
+                <a class="btn btn-secondary" href="sms:7863700602">Text to Book</a>
+                <a class="btn btn-secondary" href="mailto:rudyanthony@pointinfinite.org">Email to Book</a>
+              </div>
+            </div>
+            <div>
+              <h3>Service areas</h3>
+              <div class="service-area-grid"><span>Miami</span><span>Miami Beach</span><span>Brickell</span><span>Coral Gables</span><span>Coconut Grove</span><span>Aventura</span><span>Sunny Isles Beach</span><span>Key Biscayne</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer-contact-block">
+      <p><strong>Infinite Touch Massage</strong></p>
+      <p>Mobile Massage in Miami and nearby South Florida areas.</p>
+      <p>Phone: 786.370.0602</p>
+      <p>Email: rudyanthony@pointinfinite.org</p>
+      <p>Florida License #MA70535</p>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const button = document.querySelector('[data-theme-toggle]');
+      let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      root.setAttribute('data-theme', theme);
+      button.textContent = theme === 'dark' ? '☀' : '◐';
+      button.addEventListener('click', function () {
+        theme = theme === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', theme);
+        button.textContent = theme === 'dark' ? '☀' : '◐';
+      });
+    })();
+  </script>
+</body>
+</html>
